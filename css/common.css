@@ -1,0 +1,162 @@
+.header {
+	width: 100%;
+	height: 135px;
+}
+.device-header{
+	display: none;
+}
+
+hr,div.clear{
+	clear: both;
+}
+.header .top{
+	width: 100%;
+	background: #dfdfde;
+}
+.header .top .container{
+	width: 100%;
+	height: 28px;
+	margin:0 auto;
+	padding-top: 12px;
+}
+.header .top .container .left{
+	padding-left: 8px;
+	float: left;
+}
+.header .top .container .right a{
+	margin-right: 25px;
+}
+.header .bottom .container{
+	width: 100%;
+	height: 96px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.header .bottom .container .logo{
+	margin: 20px 0 0 15px;
+	float: left;
+}
+.header .bottom .container .nav{
+	float: right;
+}
+.header .bottom .container .nav ul li {
+	/* width: 100%; */
+	float: left;
+}
+.header .bottom .container .nav ul li a{
+	display: inline-block;
+	width: 92px;
+	height: 93px;
+	margin-right: 0px;
+}
+.header .bottom .container .nav ul li.cur a{
+	border-bottom: 3px solid #3c9cd3;
+}
+.header .bottom .container .nav ul li a:hover{
+	border-bottom: 3px solid #3c9cd3;
+	background: #faf8f8;
+}
+.header .bottom .container .nav ul li a p{
+	text-align: center;
+
+}
+.header .bottom .container .nav ul li a p.zh{
+	margin: 29px 0 10px;
+}
+.footer {
+	width: 100%;
+	height: 137px;
+	background: #5994c8;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+.footer a{
+	color: white;
+}
+.footer .connat{
+	padding-top: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+.footer .nav{
+	margin-top: 10px;
+}
+.footer .footer_down{
+position: absolute;
+line-height: 20px;
+bottom: 0px;
+left: 0;
+height: 20px;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1440px) {
+	
+
+}
+
+@media (max-width: 1024px) {
+
+
+}
+
+
+@media (max-device-width: 768px) {
+	*{
+		font-size: 0.5em;
+	}
+
+	.header{
+	    display: none;
+	}
+	.device-header{
+		display: block;
+		background-color:white;
+		box-shadow: 0 3px 17px -4px grey;
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top:0;
+		left: 0;
+		z-index: 10;
+		
+	}
+	.device-header .logo{
+		position: absolute;
+		top:50%;
+		transform: translate(0 ,-50%);
+		margin-left: 10px;
+		
+		
+	}
+	
+
+	
+	
+	
+	
+	
+}
+@media(max-device-width: 320px){
+	*{
+		font-size: 0.8em;
+	}
+	.device-header{
+		height: 50px;
+	}
+
+	.device-header .logo img{
+		width: 50%;
+		
+	}
+	
+	.footer .nav{
+		display: none;
+	}
+	.content .massage .massage-center .center-left .QR{
+		margin: 0 15%;
+	}
+	
+}
